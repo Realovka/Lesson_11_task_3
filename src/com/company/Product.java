@@ -1,10 +1,20 @@
 package com.company;
 
+import java.time.LocalDateTime;
+
 
 public class Product {
     private int id;
     private String name;
     private int price;
+    private LocalDateTime localDateTime;
+
+    public Product(int id, String name, int price, LocalDateTime localDateTime) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.localDateTime = localDateTime;
+    }
 
     public Product(int id, String name, int price) {
         this.id = id;
@@ -37,5 +47,13 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public LocalDateTime getLocalDateTime() {
+        return localDateTime;
+    }
+
+    public void setLocalDateTime(LocalDateTime localDateTime) {
+        this.localDateTime = localDateTime;
     }
 }

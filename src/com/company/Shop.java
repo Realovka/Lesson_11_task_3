@@ -33,6 +33,7 @@ public class Shop {
             System.out.print(products.get(i).getId() + " ");
             System.out.print(products.get(i).getName() + " ");
             System.out.println(products.get(i).getPrice() + " ");
+
         }
     }
 
@@ -49,11 +50,9 @@ public class Shop {
 
 
     public void replaceProduct(Product product) {         //метод, редактирующий товар
-        boolean flag = false;
         for (int i = 0; i < products.size(); i++) {
             if (product.getId()==(products.get(i).getId())) {
                 products.set(i, product);
-                flag = true;
             }
         }
 
