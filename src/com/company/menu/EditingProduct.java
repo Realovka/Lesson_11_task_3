@@ -3,7 +3,6 @@ package com.company.menu;
 import com.company.Product;
 import com.company.Shop;
 
-import java.util.GregorianCalendar;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
